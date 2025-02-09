@@ -13,9 +13,9 @@ import { useEffect } from "react";
 const TripSelector = ({ tripType, setTripType, flights, setFlights }) => {
   useEffect(() => {
     if (!Array.isArray(flights) || flights.length === 0) {
-      setFlights([{ from: "", to: "", departure: "" }]); // Ensure flights is always an array
+      setFlights([{ from: "", to: "", departure: "" }]);
     }
-  }, [tripType, setFlights]);
+  }, [tripType, setFlights, flights]);
 
   const handleTripChange = (event) => {
     const selectedTrip = event.target.value;

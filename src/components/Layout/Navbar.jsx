@@ -90,8 +90,6 @@ const Navbar = ({ toggleTheme, isDarkMode }) => {
             />
           </a>
         </Box>
-
-        {/* Navigation Links (Desktop Only) */}
         {!isMobile && (
           <Box sx={{ display: "flex", gap: "14px", marginLeft: "20px" }}>
             {["Travel", "Explore", "Flights", "Hotels", "Vacation Rentals"].map(
@@ -108,7 +106,6 @@ const Navbar = ({ toggleTheme, isDarkMode }) => {
           </Box>
         )}
 
-        {/* Right Section */}
         <Box sx={{ display: "flex", alignItems: "center", gap: "10px" }}>
           <ThemeToggle toggleTheme={toggleTheme} isDarkMode={isDarkMode} />
           <IconButton color="inherit">
@@ -129,8 +126,6 @@ const Navbar = ({ toggleTheme, isDarkMode }) => {
           </Button>
         </Box>
       </Toolbar>
-
-      {/* Sidebar Drawer */}
       <Drawer anchor="left" open={drawerOpen} onClose={toggleDrawer(false)}>
         <Box
           sx={{ width: 250 }}

@@ -1,9 +1,9 @@
 import { useState } from "react";
-import Header from "./Layout/Header";
-import Navbar from "./Layout/Navbar";
+import Header from "./components/Layout/Navbar";
+import Navbar from "./components/Layout/Navbar";
 import { ThemeProvider } from "@emotion/react";
 import { Box, CssBaseline } from "@mui/material";
-import { darkTheme, lightTheme } from "./Layout/theme";
+import { darkTheme, lightTheme } from "./components/Layout/theme";
 import Flights from "./components/Flights/FlightsPage";
 import { backGroundUrlDarkMode, backGroundUrlLightMode } from "./utils/data";
 
